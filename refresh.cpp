@@ -26,8 +26,10 @@ int main(int argc, char *argv[])
         }
     }
     sort(names.begin(), names.end());
+    ofstream outHandle("sorted.txt");
     for(vector<string>::iterator it=names.begin();
       it!=names.end(); it++) {
           cout << *it<<endl;
+          outHandle << *it <<endl;
     }
 }
