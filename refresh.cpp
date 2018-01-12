@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "print.h"
 
 using namespace std;
 
@@ -32,4 +33,6 @@ int main(int argc, char *argv[])
           cout << *it<<endl;
           outHandle << *it <<endl;
     }
+    cout << "Using print"<<endl;
+    print(names);
 }
